@@ -15,4 +15,4 @@ var bio = {
 	"contact info":"XYZ@example.com", 
 	"Skills": skills,
 };
-$("#main").append(bio.name);
+$("#main").prepend(bio.name);
