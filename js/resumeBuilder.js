@@ -23,7 +23,7 @@ bio["currentCity"] = "Ahmedabad";
 $("#main").append(bio.city);
 $("#main").append(bio["currentCity"]);
 */
-var work = {
+/* var work = {
 	
 };
 	work.position ="IT Analyst";
@@ -37,4 +37,26 @@ var education = {
 	education["Years"] = 4;
 	education["City"]= "Ahmedabad";
 $("#main").append(work["position"]);
-$("#main").append(education.Name);
+$("#main").append(education.Name); */
+var education = {
+	"schools": [
+		{
+			"name": "GTU",
+			"city": "Ahmedabad",
+			"Degree": "ECE",
+			"Graduation": 2014
+		},
+		{
+			"name": "A.G High School",
+			"city": "Ahmedabad",
+			"Degree": "High School",
+			"Graduation": 2010
+		}
+	],
+	"onlineCourse": {
+		"Name": "Udacity",
+		"Course": "Fron-End Web Developer",
+		"Graduation Year": 2017
+	}
+}
+
