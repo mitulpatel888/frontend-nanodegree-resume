@@ -38,7 +38,10 @@ var education = {
 	education["City"]= "Ahmedabad";
 $("#main").append(work["position"]);
 $("#main").append(education.Name); */
-var education = {
+/* var project = {
+	
+} */
+/* var education = {
 	"schools": [
 		{
 			"name": "GTU",
@@ -58,5 +61,5 @@ var education = {
 		"Course": "Fron-End Web Developer",
 		"Graduation Year": 2017
 	}
-}
+} */
 
