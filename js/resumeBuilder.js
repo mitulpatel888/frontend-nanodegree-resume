@@ -8,7 +8,7 @@ $("#header").append(formattedName);
 var formattedRole = HTMLheaderRole.replace("%data%", role);
 $("#header").append(formattedRole);
 */
-/*
+
 var skills = ["HTML","CSS"];
 var bio = {
 	"name":"Mitul",
@@ -20,10 +20,11 @@ $("#main").prepend(bio.name);
 bio.city = "Mumbai";
 bio.email = "test@example.com"; 
 bio["currentCity"] = "Ahmedabad"; 
-$("#main").append(bio.city);
-$("#main").append(bio["currentCity"]);
-*/
-/* var work = {
+bio.Pic = "images/fry.jpg"
+/* $("#main").append(bio.city);
+$("#main").append(bio["currentCity"]); */
+
+var work = {
 	
 };
 	work.position ="IT Analyst";
@@ -36,12 +37,23 @@ var education = {
 	education["Name"] ="Guj. Tech. University";
 	education["Years"] = 4;
 	education["City"]= "Ahmedabad";
-$("#main").append(work["position"]);
+/* $("#main").append(work["position"]);
 $("#main").append(education.Name); */
-/* var project = {
-	
-} */
-/* var education = {
+var project = {
+	"projects": [
+		{
+			"title":"Online Resume",
+			"year": 2017, 
+			"type": "Online"
+		},
+		{
+			"title":"Sample2",
+			"year":"2017",
+			"type":"online"
+		}
+	]
+}
+var education = {
 	"schools": [
 		{
 			"name": "GTU",
@@ -61,5 +73,5 @@ $("#main").append(education.Name); */
 		"Course": "Fron-End Web Developer",
 		"Graduation Year": 2017
 	}
-} */
+}
 
