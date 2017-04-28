@@ -9,18 +9,20 @@ var formattedRole = HTMLheaderRole.replace("%data%", role);
 $("#header").append(formattedRole);
 */
 
-var skills = ["HTML","CSS"];
-var bio = {
-	"name":"Mitul",
-	"role":"Web Developer",
-	"contact info":"XYZ@example.com", 
-	"Skills": skills,
-};
-$("#main").prepend(bio.name);
+
+var bio =  {
+ 	"name": "Mitul",
+ 	"role": "Web Developer",
+ 	"contact info": "XYZ@example.com",
+ 	"skills": ["HTML", "CSS", "JavaScript"]
+ };
+var formattedName = HTMLheaderName.replace("%data%",bio.name);
+$("#header").append(formattedName);
 bio.city = "Mumbai";
 bio.email = "test@example.com"; 
 bio["currentCity"] = "Ahmedabad"; 
 bio.Pic = "images/fry.jpg"
+
 /* $("#main").append(bio.city);
 $("#main").append(bio["currentCity"]); */
 
@@ -73,5 +75,16 @@ var education = {
 		"Course": "Fron-End Web Developer",
 		"Graduation Year": 2017
 	}
+}
+if(bio.skills.length>0){
+	$("#header").append(HTMLskillsStart);
+	var formattedSkill = HTMLskills.replace("%data%",bio.skills[0]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%",bio.skills[1]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%",bio.skills[2]);
+	$("#skills").append(formattedSkill);
+	
+	
 }
 
